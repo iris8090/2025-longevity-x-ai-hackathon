@@ -192,3 +192,111 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Ignore data files
+*.h5ad
+*.csv
+*.txt
+*.tsv
+*.mtx
+*.tar*
+*.gz
+*.pkl
+*.pickle
+*.json
+*.jsonl
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+*.fasta
+*.fastq
+*.fq
+*.bam
+*.sam
+*.vcf
+*.bed
+*.gtf
+*.gff
+*.bw
+*.bigwig
+*.bw
+*.bigbed
+*.bb
+*.bai
+*.tbi
+*.cram
+*.crai
+*.dict
+*.fa
+*.fai
+*.fa.gz
+*.fa.bz2
+*.fa.xz
+*.fa.zip
+*.fa.tar
+*.fa.tar.gz
+*.fa.tar.bz2
+*.fa.tar.xz
+*.fa.tar.zip
+
+
+# --- source control hygiene ---
+.DS_Store
+*.swp
+*.swo
+*~
+
+# --- Python / R / Conda envs ---
+__pycache__/
+*.py[cod]
+.env/
+.venv/
+renv/
+.Rhistory
+.RData
+.Rproj.user/
+
+# --- Jupyter & VS Code ---
+.ipynb_checkpoints/
+.vscode/
+
+# --- Build / workflow artifacts ---
+# (Snakemake, Nextflow, Cromwell, etc.)
+*.snakemake/
+.work/
+.nextflow*
+*.nf.cache
+.cromwell-executions/
+pipeline_job_*/              # tweak if your runner produces job dirs
+
+# --- Data files (keep raw data elsewhere!) ---
+# Compressed reads, alignments, assemblies, etc.
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.bam
+*.cram
+*.vcf
+*.vcf.gz
+*.fasta
+*.fa
+*.fa.gz
+*.gtf
+*.gff*
+*.bed
+*.bw
+*.hic
+*.h5
+*.npz
+*.sqlite
+*.db*
