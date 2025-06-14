@@ -5,10 +5,12 @@ Base repo for code to clean and upload datasets for Longevity x AI Hackathon Jun
 
 Upload your dataset to our hugging face org!
 
-- pip install datasets huggingface_hub
-- huggingface-cli login (Ask us for a temporary token)
-- huggingface-cli repo create my_dataset --repo-type dataset --organization longevity-db
-- huggingface-cli upload longevity-db/my_dataset . --repo-type=dataset
+```bash
+pip install datasets huggingface_hub
+huggingface-cli login # (Ask us for a temporary token)
+huggingface-cli repo create my_dataset --repo-type dataset --organization longevity-db
+huggingface-cli upload longevity-db/my_dataset . --repo-type=dataset
+```
 
 Then you can interact with it like a normal git repo!
 
